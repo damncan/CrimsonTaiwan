@@ -1,0 +1,30 @@
+body {
+	background-color: rgb(245, 248, 250);
+}
+
+.navbar .glyphicon {
+	float: left;
+	font-size: 20px;
+	padding-right: 10px;
+}
+
+.navbar {
+	margin-bottom: 0px;
+	position: relative;
+}
+
+.navbar .navbar-collapse li:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.navbar .navbar-collapse li:hover:after {
+	height: 3px;
+	width: 100%;
+	background: rgba(0, 132, 180, 0.4);
+	color: rgba(0, 132, 180, 0.4);
+}

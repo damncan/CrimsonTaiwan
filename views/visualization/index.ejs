@@ -1,0 +1,241 @@
+    <div style="margin:30px">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-primary">
+                    <!-- <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div> -->
+                    <div class="panel-body">
+                        <div class="btn-group">
+                          <button id="startDropdown1" type="button" class="btn infoArea dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            犯罪率 <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">犯罪種類</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="switchView">犯罪率</a></li>
+                                    <li><a href="#" class="switchView">住宅竊盜</a></li>
+                                    <li><a href="#" class="switchView">汽車竊盜</a></li>
+                                    <li><a href="#" class="switchView">毒品</a></li>
+                                    <li><a href="#" class="switchView">強制性交</a></li>
+                                    <li><a href="#" class="switchView">強盜</a></li>
+                                    <li><a href="#" class="switchView">搶奪</a></li>
+                                    <li><a href="#" class="switchView">機車竊盜</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">一般人口統計</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="switchView">人口總數</a></li>
+                                    <li><a href="#" class="switchView">壯年人口數</a></li>
+                                    <li><a href="#" class="switchView">扶養比</a></li>
+                                    <li><a href="#" class="switchView">男女比</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">婚姻狀況</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="switchView">有偶</a></li>
+                                    <li><a href="#" class="switchView">離婚</a></li>
+                                    <li><a href="#" class="switchView">喪偶</a></li>
+                                    <li><a href="#" class="switchView">未婚</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">經濟狀況</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="switchView">平均每人所得</a></li>
+                                    <li><a href="#" class="switchView">收入標準差</a></li>
+                                    <li><a href="#" class="switchView">貧富差距</a></li>
+                                    <li><a href="#" class="switchView">低收人口比</a></li>
+                                    <li><a href="#" class="switchView">每坪房價</a></li>
+                                    <li><a href="#" class="switchView">第一級產業比率</a></li>
+                                    <li><a href="#" class="switchView">第二級產業比率</a></li>
+                                    <li><a href="#" class="switchView">第三級產業比率</a></li>
+                                    <li><a href="#" class="switchView">產業</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">教育狀況</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="switchView">國小學校數</a></li>
+                                    <li><a href="#" class="switchView">國中學校數</a></li>
+                                    <li><a href="#" class="switchView">高級中等學校學校數</a></li>
+                                    <li><a href="#" class="switchView">國中小人口比例</a></li>
+                                    <li><a href="#" class="switchView">高中職五專人口比例</a></li>
+                                    <li><a href="#" class="switchView">高等教育人口比例</a></li>
+                                    <li><a href="#" class="switchView">文盲比率</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">其它</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="switchView">警察局數</a></li>
+                                </ul>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">施工中</a></li>
+                          </ul>
+                        </div>
+
+                        <svg id="graph1" width="100%" height="500px" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid"></svg>
+
+                        <div id="info" style="font-size:20px">
+                            <div class="row">
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-6">
+                            <div class="alert  infoArea" role="alert">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                    </div>
+                                    <div class="media-body text-center" id="graph1name">尚未選擇城市</div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-lg-3"></div>
+                            </div>
+
+                            <div class="row">
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-6">
+                            <div class="alert  infoArea" role="alert">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="glyphicon glyphicon-info-sign"></span>
+                                    </div>
+                                    <div class="media-body text-center" id="graph1density">尚未選擇城市</div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-lg-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+
+
+
+            <div class="col-md-6">
+                <div class="panel panel-primary">
+                    <!-- <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div> -->
+                    <div class="panel-body">
+                        <div class="btn-group">
+                          <button id="startDropdown2" type="button" class="btn infoArea dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            犯罪率 <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">犯罪種類</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="switchView2">犯罪率</a></li>
+                                    <li><a href="#" class="switchView2">住宅竊盜</a></li>
+                                    <li><a href="#" class="switchView2">汽車竊盜</a></li>
+                                    <li><a href="#" class="switchView2">毒品</a></li>
+                                    <li><a href="#" class="switchView2">強制性交</a></li>
+                                    <li><a href="#" class="switchView2">強盜</a></li>
+                                    <li><a href="#" class="switchView2">搶奪</a></li>
+                                    <li><a href="#" class="switchView2">機車竊盜</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">一般人口統計</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="switchView2">人口總數</a></li>
+                                    <li><a href="#" class="switchView2">壯年人口數</a></li>
+                                    <li><a href="#" class="switchView2">扶養比</a></li>
+                                    <li><a href="#" class="switchView2">男女比</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">婚姻狀況</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="switchView2">有偶</a></li>
+                                    <li><a href="#" class="switchView2">離婚</a></li>
+                                    <li><a href="#" class="switchView2">喪偶</a></li>
+                                    <li><a href="#" class="switchView2">未婚</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">經濟狀況</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="switchView2">平均每人所得</a></li>
+                                    <li><a href="#" class="switchView2">收入標準差</a></li>
+                                    <li><a href="#" class="switchView2">貧富差距</a></li>
+                                    <li><a href="#" class="switchView2">低收人口比</a></li>
+                                    <li><a href="#" class="switchView2">每坪房價</a></li>
+                                    <li><a href="#" class="switchView2">第一級產業比率</a></li>
+                                    <li><a href="#" class="switchView2">第二級產業比率</a></li>
+                                    <li><a href="#" class="switchView2">第三級產業比率</a></li>
+                                    <li><a href="#" class="switchView2">產業</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">教育狀況</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="switchView2">國小學校數</a></li>
+                                    <li><a href="#" class="switchView2">國中學校數</a></li>
+                                    <li><a href="#" class="switchView2">高級中等學校學校數</a></li>
+                                    <li><a href="#" class="switchView2">國中小人口比例</a></li>
+                                    <li><a href="#" class="switchView2">高中職五專人口比例</a></li>
+                                    <li><a href="#" class="switchView2">高等教育人口比例</a></li>
+                                    <li><a href="#" class="switchView2">文盲比率</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">其它</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="switchView2">警察局數</a></li>
+                                </ul>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">施工中</a></li>
+                          </ul>
+                        </div>
+
+                        <svg id="graph2" width="100%" height="500px" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid"></svg>
+
+                        <div id="info" style="font-size:20px">
+                            <div class="row">
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-6">
+                            <div class="alert  infoArea" role="alert">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="glyphicon glyphicon-map-marker"></span>
+                                    </div>
+                                    <div class="media-body text-center" id="graph2name">尚未選擇城市</div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-lg-3"></div>
+                            </div>
+
+                            <div class="row">
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-6">
+                            <div class="alert  infoArea" role="alert">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="glyphicon glyphicon-info-sign"></span>
+                                    </div>
+                                    <div class="media-body text-center" id="graph2density">尚未選擇城市</div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-lg-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
