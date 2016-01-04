@@ -4,8 +4,9 @@ body {
 
 .navbar .glyphicon {
 	float: left;
-	font-size: 20px;
+	font-size: 25px;
 	padding-right: 10px;
+	top: -1px;
 }
 
 .navbar {
