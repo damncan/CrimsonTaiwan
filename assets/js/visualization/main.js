@@ -69,6 +69,7 @@ $(document).ready(function(){
     });
   });
 
+  // 切換視角
   $(".switchView").click(function(e){
     e.preventDefault();
     $("#startDropdown1").html($(this).text()+' <span class="caret"></span>');
@@ -88,5 +89,44 @@ $(document).ready(function(){
         update("graph2",path,min,max);
       });
     });
+  });
+
+  // 切換類別
+  $(".switchCate").click(function(e){
+    e.preventDefault();
+    $("#cateDropdown").html($(this).text()+' <span class="caret"></span>');
+
+    situation = $(this).attr("name");
+    if(situation == "all"){
+      d3.json("/data.json", function(json) {
+        data = json;
+
+        generateGraph("graph1", $("#startDropdown1").text().trim(), function(path,min,max){
+          d3.select("#graph1").on("mousemove", function() {
+            update("graph1",path,min,max);
+          });
+        });
+        generateGraph("graph2", $("#startDropdown2").text().trim(), function(path,min,max){
+          d3.select("#graph2").on("mousemove", function() {
+            update("graph2",path,min,max);
+          });
+        });
+      });
+    }else{
+      d3.json("/city"+situation+".json", function(json) {
+        data = json;
+
+        generateGraph("graph1", $("#startDropdown1").text().trim(), function(path,min,max){
+          d3.select("#graph1").on("mousemove", function() {
+            update("graph1",path,min,max);
+          });
+        });
+        generateGraph("graph2", $("#startDropdown2").text().trim(), function(path,min,max){
+          d3.select("#graph2").on("mousemove", function() {
+            update("graph2",path,min,max);
+          });
+        });
+      });
+    }
   });
 });

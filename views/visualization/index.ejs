@@ -1,4 +1,30 @@
     <div style="margin:30px">
+        <div class="row text-center" style="padding:10px">
+            <div class="btn-group">
+                <button id="cateDropdown" type="button" class="btn infoArea dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    全選 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="switchCate" name="all">全選</a></li>
+                    <li class="dropdown-submenu">
+                        <a tabindex="-1" href="#">社會流動</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="switchCate" name="I">人口移入城市</a></li>
+                            <li><a href="#" class="switchCate" name="O">人口移出城市</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a tabindex="-1" href="#">產業</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="switchCate" name="1">一級產業城市</a></li>
+                            <li><a href="#" class="switchCate" name="2">二級產業城市</a></li>
+                            <li><a href="#" class="switchCate" name="3">三級產業城市</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-md-6">
                 <div class="panel panel-primary">
